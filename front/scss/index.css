@@ -135,8 +135,19 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom, #3282b8 15%, #0f4c75 50%, #1b262c 95%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 body header nav .container {
-  background-color: #bbe1fa;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,7 +155,7 @@ body header nav .container {
   margin-right: 15%;
   margin-top: 30px;
   padding: 10px;
-  border-radius: 15px;
+  border-bottom: solid 2px #bbe1fa;
 }
 body header nav .container .left {
   display: flex;
@@ -154,26 +165,76 @@ body header nav .container .left {
 body header nav .container .left .brand {
   font-family: "Ubuntu-font";
   font-size: 20px;
+  color: white;
 }
 body header nav .container .left .menu {
   margin-left: 20px;
+  background-color: #0f4c75;
+  padding: 10px;
+  border-radius: 10px;
+}
+body header nav .container .left .menu:hover {
+  background-color: #1b262c;
 }
 body header nav .container .left .menu a {
-  margin-left: 20px;
+  margin: 10px;
   font-family: "Ubuntu-font";
   font-size: 20px;
+  color: #bbe1fa;
+  text-decoration: none;
+}
+body header nav .container .left .menu a:hover {
+  color: #ffad00;
 }
 body header nav .container .right {
   display: flex;
   align-items: center;
 }
 body header nav .container .right .button {
-  background-color: #1b262c;
+  background-color: #ffad00;
   padding: 10px;
   border-radius: 10px;
 }
 body header nav .container .right .button a {
   font-family: "Ubuntu-font";
   font-size: 20px;
-  color: #bbe1fa;
+  color: #1b262c;
+  text-decoration: none;
+}
+body header nav .container .right .button:hover {
+  border: solid 3px #1b262c;
+  padding: 7px;
+}
+body main {
+  margin-top: 10vh;
+}
+body main .container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+body main .container .left-section {
+  flex: 1; /* Take up 1 part of the flex container (adjust as needed) */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main .container .left-section p {
+  padding: 50px;
+  font-size: 24px;
+  color: white;
+  font-family: "Ubuntu-font";
+  line-height: 1.7;
+  text-align: justify;
+}
+body main .container .right-section {
+  flex: 1; /* Take up 1 part of the flex container (adjust as needed) */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .container .right-section img {
+  width: 700px;
 }/*# sourceMappingURL=index.css.map */

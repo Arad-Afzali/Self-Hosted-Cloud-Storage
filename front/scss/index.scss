@@ -137,14 +137,23 @@ $color_1: #1b262c;
 $color_2: #0f4c75;
 $color_3: #3282b8;
 $color_4: #bbe1fa;
+$color_5: #ffad00;
 
 $font: "Ubuntu-font";
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
 body {
+  background: linear-gradient(to bottom, #3282b8 15%, #0f4c75 50%, #1b262c 95%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   header {
     nav {
       .container {
-        background-color: $color_4;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -152,7 +161,7 @@ body {
         margin-right: 15%;
         margin-top: 30px;
         padding: 10px;
-        border-radius: 15px;
+        border-bottom: solid 2px $color_4;
 
         .left {
           display: flex;
@@ -161,14 +170,26 @@ body {
           .brand {
             font-family: $font;
             font-size: 20px;
-
+            color: white;
           }
           .menu {
             margin-left: 20px;
+            background-color: $color_2;
+            padding: 10px;
+            border-radius: 10px;
+            &:hover {
+              background-color: $color_1;
+            }
+
             a {
-              margin-left: 20px;
+              margin: 10px;
               font-family: $font;
               font-size: 20px;
+              color: $color_4;
+              text-decoration: none;
+              &:hover {
+                color: $color_5;
+              }
             }
           }
         }
@@ -176,14 +197,18 @@ body {
           display: flex;
           align-items: center;
           .button {
-            background-color: $color_1;
+            background-color: $color_5;
             padding: 10px;
             border-radius: 10px;
             a {
               font-family: $font;
               font-size: 20px;
-
-              color: $color_4;
+              color: $color_1;
+              text-decoration: none;
+            }
+            &:hover {
+              border: solid 3px $color_1;
+              padding: 7px;
             }
           }
         }
@@ -191,6 +216,37 @@ body {
     }
   }
   main {
+    margin-top: 10vh;
+    .container {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      .left-section {
+        flex: 1; /* Take up 1 part of the flex container (adjust as needed) */
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+          padding: 50px;
+          font-size: 24px;
+          color: white;
+          font-family: $font;
+          line-height: 1.7;
+          text-align: justify;
+        }
+      }
+      .right-section {
+        flex: 1; /* Take up 1 part of the flex container (adjust as needed) */
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 700px;
+        }
+      }
+    }
   }
   footer {
   }

@@ -148,6 +148,7 @@ html {
 }
 
 body {
+  transition: all 0.5s ease-in-out;
   background: linear-gradient(to bottom, #3282b8 15%, #0f4c75 50%, #1b262c 95%);
   height: 100%;
   display: flex;

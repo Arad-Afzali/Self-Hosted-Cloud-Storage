@@ -132,6 +132,12 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Lobster-font";
+  src: url("../font/Lobster-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 $color_1: #1b262c;
 $color_2: #0f4c75;
@@ -140,6 +146,7 @@ $color_4: #bbe1fa;
 $color_5: #ffad00;
 
 $font: "Ubuntu-font";
+$font-brand: "Lobster-font";
 html {
   margin: 0;
   padding: 0;
@@ -167,13 +174,8 @@ body {
           display: flex;
           align-items: center;
           padding: 5px;
-          .brand {
-            font-family: $font;
-            font-size: 20px;
-            color: white;
-          }
+
           .menu {
-            margin-left: 20px;
             background-color: $color_2;
             padding: 10px;
             border-radius: 10px;
@@ -191,6 +193,16 @@ body {
                 color: $color_5;
               }
             }
+          }
+        }
+        .middle {
+          display: flex;
+          align-items: center;
+          margin-left: -90px;
+          .brand {
+            font-family: $font-brand;
+            font-size: 35px;
+            color: white;
           }
         }
         .right {
@@ -246,8 +258,45 @@ body {
           width: 700px;
         }
       }
+      .about {
+        margin-right: 15%;
+        margin-left: 15%;
+        background-color: #1b262c7d;
+        border-radius: 25px;
+        p {
+          padding: 50px;
+          font-size: 24px;
+          color: white;
+          font-family: $font;
+          line-height: 1.7;
+          text-align: justify;
+        }
+      }
     }
   }
   footer {
+    margin-top: 2vh;
+    .container {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon {
+        a {
+          svg {
+            width: 100px;
+            height: 100px;
+            background-color: $color_4;
+            border-radius: 15px;
+          }
+        }
+        &:hover {
+          svg {
+            background-color: $color_3;
+          }
+        }
+      }
+    }
   }
 }

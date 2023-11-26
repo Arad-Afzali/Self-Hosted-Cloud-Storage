@@ -135,6 +135,12 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Lobster-font";
+  src: url("../font/Lobster-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   margin: 0;
   padding: 0;
@@ -162,13 +168,7 @@ body header nav .container .left {
   align-items: center;
   padding: 5px;
 }
-body header nav .container .left .brand {
-  font-family: "Ubuntu-font";
-  font-size: 20px;
-  color: white;
-}
 body header nav .container .left .menu {
-  margin-left: 20px;
   background-color: #0f4c75;
   padding: 10px;
   border-radius: 10px;
@@ -185,6 +185,16 @@ body header nav .container .left .menu a {
 }
 body header nav .container .left .menu a:hover {
   color: #ffad00;
+}
+body header nav .container .middle {
+  display: flex;
+  align-items: center;
+  margin-left: -90px;
+}
+body header nav .container .middle .brand {
+  font-family: "Lobster-font";
+  font-size: 35px;
+  color: white;
 }
 body header nav .container .right {
   display: flex;
@@ -237,4 +247,37 @@ body main .container .right-section {
 }
 body main .container .right-section img {
   width: 700px;
+}
+body main .container .about {
+  margin-right: 15%;
+  margin-left: 15%;
+  background-color: rgba(27, 38, 44, 0.4901960784);
+  border-radius: 25px;
+}
+body main .container .about p {
+  padding: 50px;
+  font-size: 24px;
+  color: white;
+  font-family: "Ubuntu-font";
+  line-height: 1.7;
+  text-align: justify;
+}
+body footer {
+  margin-top: 2vh;
+}
+body footer .container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer .container .icon a svg {
+  width: 100px;
+  height: 100px;
+  background-color: #bbe1fa;
+  border-radius: 15px;
+}
+body footer .container .icon:hover svg {
+  background-color: #3282b8;
 }/*# sourceMappingURL=index.css.map */

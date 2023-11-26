@@ -12,7 +12,7 @@
         <div class="container">
           <div class="left">
             <div class="menu">
-              <a href="./index.html" style="color: #ffad00">Home</a>
+              <a href="./index.html" >Home</a>
               <a href="./about.html">About</a>
               
             </div>
@@ -23,7 +23,7 @@
           </div>
           <div class="right">
             <div class="button">
-              <a href="./login.html">Login</a>
+              <a href="./login.html" style="color: #ffad00">Login</a>
             </div>
           </div>
         </div>
@@ -31,22 +31,18 @@
     </header>
     <main>
       <div class="container">
-        <div class="left-section">
-          <p>
-            Self-hosted cloud storage refers to the practice of hosting and
-            managing your own cloud storage solution. Unlike using third-party
-            cloud storage providers, self-hosted solutions allow you to have
-            full control over your data, security, and privacy. You can set up
-            your server, and use features such as file synchronization and
-            sharing while keeping your data on infrastructure that you manage.
-          </p>
+        <div class="login-container">
+          <h2>Login to your account</h2>
+          <form action="#" method="post">
+            <input type="text" name="username" placeholder="Username or Email" required>
+            <br>
+            <input type="password" name="password" placeholder="Password" required>
+            <br>
+            <button type="submit">Login</button>
+          </form>
+          <p class="forget">Forget your password? <a href="">Click here</a></p>
         </div>
-        <div class="right-section">
-          <img
-            src="./files/pictures/cloud storage.png"
-            alt="Description of your image"
-          />
-        </div>
+      
       </div>
     </main>
     <footer></footer>

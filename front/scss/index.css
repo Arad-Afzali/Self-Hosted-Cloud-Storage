@@ -172,9 +172,11 @@ body header nav .container .left .menu {
   background-color: #0f4c75;
   padding: 10px;
   border-radius: 10px;
+  transition: all 0.5s ease-in-out;
 }
 body header nav .container .left .menu:hover {
   background-color: #1b262c;
+  transition: all 0.5s ease-in-out;
 }
 body header nav .container .left .menu a {
   margin: 10px;
@@ -182,9 +184,11 @@ body header nav .container .left .menu a {
   font-size: 20px;
   color: #bbe1fa;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 body header nav .container .left .menu a:hover {
   color: #ffad00;
+  transition: all 0.3s ease-in-out;
 }
 body header nav .container .middle {
   display: flex;
@@ -201,22 +205,32 @@ body header nav .container .right {
   align-items: center;
 }
 body header nav .container .right .button {
-  background-color: #ffad00;
+  background-color: #0f4c75;
   padding: 10px;
   border-radius: 10px;
-}
-body header nav .container .right .button a {
-  font-family: "Ubuntu-font";
-  font-size: 20px;
-  color: #1b262c;
-  text-decoration: none;
+  transition: all 0.5s ease-in-out;
 }
 body header nav .container .right .button:hover {
-  border: solid 3px #1b262c;
-  padding: 7px;
+  background-color: #1b262c;
+  transition: all 0.5s ease-in-out;
+}
+body header nav .container .right .button a {
+  margin: 10px;
+  font-family: "Ubuntu-font";
+  font-size: 20px;
+  color: #bbe1fa;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+body header nav .container .right .button a:hover {
+  color: #ffad00;
+  transition: all 0.3s ease-in-out;
 }
 body main {
   margin-top: 10vh;
+  text-align: center;
+  justify-content: center;
+  display: flex;
 }
 body main .container {
   margin: 0;
@@ -262,6 +276,48 @@ body main .container .about p {
   line-height: 1.7;
   text-align: justify;
 }
+body main .container .login-container {
+  background-color: #bbe1fa;
+  padding: 40px;
+  border-radius: 25px;
+  width: 300px;
+  text-align: center;
+  font-family: "Ubuntu-font";
+}
+body main .container .login-container input {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-family: "Ubuntu-font";
+  font-size: 15px;
+}
+body main .container .login-container button {
+  margin-top: 40px;
+  background-color: #0f4c75;
+  font-family: "Ubuntu-font";
+  font-size: 17px;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+body main .container .login-container button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #ffad00;
+}
+body main .container .login-container .forget {
+  margin-top: 30px;
+  font-family: "Ubuntu-font";
+}
+body main .container .login-container .forget a {
+  text-decoration: none;
+  color: #0f4c75;
+}
 body footer {
   margin-top: 2vh;
 }
@@ -277,7 +333,9 @@ body footer .container .icon a svg {
   height: 100px;
   background-color: #bbe1fa;
   border-radius: 15px;
+  transition: all 0.5s ease-in-out;
 }
 body footer .container .icon:hover svg {
   background-color: #3282b8;
+  transition: all 0.5s ease-in-out;
 }/*# sourceMappingURL=index.css.map */

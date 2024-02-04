@@ -183,12 +183,76 @@ body main .dashboard .container .sections .left-section .container .profile .con
 body main .dashboard .container .sections .left-section .container .profile .container .name .text p span {
   background-color: #ffffff;
   font-family: "Ubuntu-font";
+  color: #1b262c;
   font-size: 25px;
   padding: 5px;
   border-radius: 5px;
 }
 body main .dashboard .container .sections .left-section .container .options {
   margin-top: 40px;
+  margin-left: 15px;
+  background-color: #bbe1fa;
+}
+body main .dashboard .container .sections .left-section .container .options .top {
+  height: 40px;
+  border-bottom-right-radius: 25px;
+  background-color: #1b262c;
+}
+body main .dashboard .container .sections .left-section .container .options .middle {
+  background-color: #1b262c;
+}
+body main .dashboard .container .sections .left-section .container .options .middle p {
+  background-color: #bbe1fa;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+body main .dashboard .container .sections .left-section .container .options .middle p a {
+  text-decoration: none;
+}
+body main .dashboard .container .sections .left-section .container .options .middle p a span {
+  font-family: "Ubuntu-font";
+  font-size: 20px;
+  color: #1b262c;
+}
+body main .dashboard .container .sections .left-section .container .options .middle p a span img {
+  height: 20px;
+  margin-right: 10px;
+}
+body main .dashboard .container .sections .left-section .container .options .middle p a #active {
+  background-color: #3282b8;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 25px;
+}
+body main .dashboard .container .sections .left-section .container .options .bottom {
+  height: 40px;
+  border-top-right-radius: 25px;
+  background-color: #1b262c;
+}
+body main .dashboard .container .sections .left-section .container .actions {
+  margin-top: 30vh;
+}
+body main .dashboard .container .sections .left-section .container .actions .container p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+body main .dashboard .container .sections .left-section .container .actions .container p a {
+  text-decoration: none;
+}
+body main .dashboard .container .sections .left-section .container .actions .container p a span {
+  font-family: "Ubuntu-font";
+  font-size: 20px;
+  color: #ffffff;
+}
+body main .dashboard .container .sections .left-section .container .actions .container p a span img {
+  height: 10px;
 }
 body main .dashboard .container .sections .middle-section {
   background-color: #bbe1fa;

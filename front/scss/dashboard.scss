@@ -151,101 +151,165 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-//   overflow: hidden;
-
+  //   overflow: hidden;
 }
 
-body{
-    main{
-        .dashboard{
-            width: 100vw;
-            height: 100vh;
+body {
+  main {
+    .dashboard {
+      width: 100vw;
+      height: 100vh;
+      background-color: $color_1;
+      .container {
+        .sections {
+          display: flex; /* Use flexbox layout */
+
+          .left-section {
             background-color: $color_1;
-            .container{
+            flex: 1;
+            flex-basis: 13%;
+            height: 100vh;
 
-                .sections{
-                    display: flex; /* Use flexbox layout */
+            // content ---------------------
+            .container {
+              .profile {
+                .container {
+                  .picture {
+                    .image {
+                      padding-top: 7vh;
+                      display: flex;
+                      margin: auto;
+                      justify-content: center;
+                      align-items: center;
+                      img {
+                        width: 45%;
+                        padding: 5px;
+                        background-color: #ffffff;
+                        border-radius: 50%;
+                      }
+                    }
+                  }
 
-                    .left-section{
-                        background-color: $color_1; 
-                        flex: 1; 
-                        flex-basis: 13%;
-                        height: 100vh;
+                  .name {
+                    .text {
+                      margin-top: 40px;
+                      p {
+                        text-align: center;
 
+                        span {
+                          background-color: #ffffff;
+                          font-family: $font;
+                          color: $color_1;
 
-                        // content ---------------------
-                        .container{
-                            .profile{
-                                .container{
-                                    .picture{
-                                        .image{
-                                            padding-top: 7vh;
-                                            display: flex;
-                                            margin: auto;
-                                            justify-content: center;
-                                            align-items: center;
-                                            img{
-                                                width: 45%;
-                                                padding: 5px;
-                                                background-color: #ffffff;
-                                                border-radius: 50%;
-                                            }
-                                        }
+                          font-size: 25px;
+                          padding: 5px;
+                          border-radius: 5px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .options {
+                margin-top: 40px;
+                margin-left: 15px;
+                background-color: $color_4;
 
-                                    }
-                                
-                                    .name{
-                                        .text{
-                                            margin-top: 40px;
-                                            p{
-                                                text-align: center;
+                .top {
+                  height: 40px;
+                  border-bottom-right-radius: 25px;
+                  background-color: $color_1;
+                }
 
-                                                span{
-                                                background-color: #ffffff;
-                                                    font-family: $font;
-                                                    font-size: 25px;
-                                                    padding: 5px;
-                                                    border-radius: 5px;
-                                                }
-                                            }
-                                        }
-                                    }
+                .middle {
+                  background-color: $color_1;
+                  p {
+                    background-color: $color_4;
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    height: 60px;
+
+                    a{
+                        text-decoration: none;
+                        span {
+                            font-family: $font;
+                            font-size: 20px;
+                            color: $color_1;
+                            img{
+                                height: 20px;
+                                margin-right: 10px;
+                            }
+                           
+                        }
+                        #active{
+                            background-color: $color_3;
+                            padding: 10px;
+                            padding-left: 25px;
+                            padding-right: 25px;
+                            border-radius: 25px;
+                        }
+                    }
+                  }
+                }
+
+                .bottom {
+                  height: 40px;
+                  border-top-right-radius: 25px;
+                  background-color: $color_1;
+                }
+              }
+              .actions{
+                margin-top: 30vh;
+                .container{
+                    p{
+                        display: flex;
+                        text-align: center;
+                        align-items: center;
+                        justify-content: center;
+                        height: 60px;
+                        a{
+                            text-decoration: none;
+
+                            span{
+                                font-family: $font;
+                                font-size: 20px;
+                                color:#ffffff;
+                                img{
+                                    height: 10px;
                                 }
                             }
-                            .options{
-                                margin-top: 40px;
-                                // background-color: $color_4;
-                            }
                         }
-                        
-
-                    }
-                    .middle-section{
-                        background-color: $color_4; 
-                        flex: 1; 
-                        flex-basis: 57%;
-                        // height: 100vh;
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        border-top-left-radius: 25px;
-                        border-bottom-left-radius: 25px;
-
-                    }
-                    .right-section{
-                        background-color: $color_4; 
-                        flex: 1; 
-                        flex-basis: 30%;
-                        // height: 100vh;
-
-                        margin-top: 10px; 
-                        margin-right: 10px; 
-                        margin-bottom: 10px; 
-                        border-top-right-radius: 25px;
-                        border-bottom-right-radius: 25px;
-
                     }
                 }
+              }
             }
+          }
+          .middle-section {
+            background-color: $color_4;
+            flex: 1;
+            flex-basis: 57%;
+            // height: 100vh;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+          }
+          .right-section {
+            background-color: $color_4;
+            flex: 1;
+            flex-basis: 30%;
+            // height: 100vh;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+          }
         }
+      }
     }
+  }
 }

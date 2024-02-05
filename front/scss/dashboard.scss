@@ -231,25 +231,24 @@ body {
                     justify-content: center;
                     height: 60px;
 
-                    a{
-                        text-decoration: none;
-                        span {
-                            font-family: $font;
-                            font-size: 20px;
-                            color: $color_1;
-                            img{
-                                height: 20px;
-                                margin-right: 10px;
-                            }
-                           
+                    a {
+                      text-decoration: none;
+                      span {
+                        font-family: $font;
+                        font-size: 20px;
+                        color: $color_1;
+                        img {
+                          height: 20px;
+                          margin-right: 10px;
                         }
-                        #active{
-                            background-color: $color_3;
-                            padding: 10px;
-                            padding-left: 25px;
-                            padding-right: 25px;
-                            border-radius: 25px;
-                        }
+                      }
+                      #active {
+                        background-color: $color_3;
+                        padding: 10px;
+                        padding-left: 25px;
+                        padding-right: 25px;
+                        border-radius: 25px;
+                      }
                     }
                   }
                 }
@@ -260,28 +259,28 @@ body {
                   background-color: $color_1;
                 }
               }
-              .actions{
+              .actions {
                 margin-top: 30vh;
-                .container{
-                    p{
-                        display: flex;
-                        text-align: center;
-                        align-items: center;
-                        justify-content: center;
-                        height: 60px;
-                        a{
-                            text-decoration: none;
+                .container {
+                  p {
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    height: 60px;
+                    a {
+                      text-decoration: none;
 
-                            span{
-                                font-family: $font;
-                                font-size: 20px;
-                                color:#ffffff;
-                                img{
-                                    height: 10px;
-                                }
-                            }
+                      span {
+                        font-family: $font;
+                        font-size: 20px;
+                        color: #ffffff;
+                        img {
+                          height: 10px;
                         }
+                      }
                     }
+                  }
                 }
               }
             }
@@ -295,6 +294,167 @@ body {
             margin-bottom: 10px;
             border-top-left-radius: 25px;
             border-bottom-left-radius: 25px;
+            overflow: auto;
+
+            .container {
+              padding: 50px;
+              .folders {
+
+                .container {
+                  p {
+                    padding-bottom: 50px;
+                    span {
+                      font-family: $font;
+                      font-size: 25px;
+                    }
+                  }
+                  .island {
+                    height: 120px;
+                    width: 160px;
+                    background-color: $color_3;
+                    border-radius: 25px;
+                    float: left;
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+
+                    .container {
+                      padding: 15px;
+
+                      .logo {
+                        height: 35px;
+                        width: 35px;
+                        background-color: #ffffff;
+                        border-radius: 50%;
+
+                        img {
+                          max-width: 100%;
+                          max-height: 100%;
+                          width: auto;
+                          height: auto;
+                          padding: 5px;
+                        }
+                      }
+                      .title {
+                        margin-top: 7px;
+                        p {
+                          padding-bottom: 0px;
+                          span {
+                            font-family: $font;
+                            font-size: 22px;
+                          }
+                        }
+                      }
+                      .filenum {
+                        margin-top: 7px;
+
+                        p {
+                          padding-bottom: 0px;
+
+                          span {
+                            font-family: $font;
+                            font-size: 15px;
+                          }
+                        }
+                      }
+                      .empty {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 26px;
+                        .plus {
+                          height: 35px;
+                          width: 35px;
+                          background-color: #ffffff;
+                          border-radius: 50%;
+
+                          img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            width: auto;
+                            height: auto;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .files {
+                margin-top: 20vh;
+
+                .container {
+                  p {
+                    padding-bottom: 50px;
+                    span {
+                      font-family: $font;
+                      font-size: 25px;
+                    }
+                  }
+                  .file-islands {
+                    width: 100%;
+                    height: 80px;
+                    background-color: $color_3;
+                    border-radius: 25px;
+                    margin-bottom: 20px;
+                    .container {
+                      padding: 0px;
+                      padding-left: 15px;
+                      display: flex;
+                      align-items: center;
+                      height: 100%;
+                      .logo {
+                        .logo-img {
+                          height: 35px;
+                          width: 35px;
+                          background-color: #ffffff;
+                          border-radius: 50%;
+                          img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            width: auto;
+                            height: auto;
+                            padding: 5px;
+                          }
+                        }
+                      }
+                      .file-name {
+                        span {
+                          font-family: $font;
+                          margin-left: 20px;
+                        }
+                      }
+                      .file-type {
+                        span {
+                          font-family: $font;
+                          margin-left: 150px;
+                        }
+                      }
+                      .file-size {
+                        span {
+                          font-family: $font;
+                          margin-left: 150px;
+                        }
+                      }
+                      .file-options {
+                        .options-img {
+                          height: 35px;
+                          width: 35px;
+                          margin-left: 250px;
+                         
+                          img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            width: auto;
+                            height: auto;
+                            padding: 5px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
           .right-section {
             background-color: $color_4;

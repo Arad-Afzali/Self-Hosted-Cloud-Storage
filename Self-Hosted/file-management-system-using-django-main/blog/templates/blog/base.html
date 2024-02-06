@@ -38,8 +38,8 @@
                   </ul>
                   <!------{{ request.get_host }}/blog/search/-->
                   <form id="searchform" action="{% url 'search' %}" method="get">
-                    <input type="text" name="q" type="text" value="{{ request.GET.q }}" placeholder="Search" />
-                    <button type="button" onclick="searchform.submit()" class=" text-white my-color btn-primary"><i class="fa fa-search"></i></button>
+                    <input style="border-radius: 7px; border: none;" type="text" name="q" type="text" value="{{ request.GET.q }}" placeholder="Search" />
+                    <button style="border-radius: 7px; border: none;" type="button" onclick="searchform.submit()" class=" text-white my-color btn-primary"><i class="fa fa-search"></i></button>
                 </form>
               
                     {% if user.is_authenticated %}

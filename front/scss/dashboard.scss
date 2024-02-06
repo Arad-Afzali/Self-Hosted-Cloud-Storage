@@ -139,10 +139,10 @@ table {
   font-style: normal;
 }
 
-$color_1: #1b262c;
+$color_1: #121432;
 $color_2: #0f4c75;
-$color_3: #3282b8;
-$color_4: #bbe1fa;
+$color_3: #ffffff;
+$color_4: #c4ccdb;
 $color_5: #ffad00;
 
 $font: "Ubuntu-font";
@@ -299,7 +299,7 @@ body {
             .container {
               padding: 50px;
               .folders {
-
+                margin-bottom: 20vh;
                 .container {
                   p {
                     padding-bottom: 50px;
@@ -380,8 +380,6 @@ body {
                 }
               }
               .files {
-                margin-top: 20vh;
-
                 .container {
                   p {
                     padding-bottom: 50px;
@@ -440,7 +438,7 @@ body {
                           height: 35px;
                           width: 35px;
                           margin-left: 250px;
-                         
+
                           img {
                             max-width: 100%;
                             max-height: 100%;
@@ -467,6 +465,65 @@ body {
             margin-bottom: 10px;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
+            .container {
+              padding: 50px;
+              display: inline-block;
+              a {
+                .add-file {
+                  height: 400px;
+                  width: 400px;
+                  background-color: $color_3;
+                  border-radius: 25px;
+                  padding: 20px;
+                margin-bottom: 20px;
+
+                  .container {
+                    background-color: $color_4;
+
+                    height: 300px;
+                    width: 300px;
+                    border-radius: 15px;
+                    .upload-logo {
+                      height: 150px;
+                      width: 300px;
+                      text-align: center;
+                      .image {
+                        padding-top: 100px;
+                        img {
+                        }
+                      }
+                    }
+                    .text {
+                      height: 150px;
+                      width: 300px;
+                      text-align: center;
+                      span {
+                        font-family: $font;
+                        font-size: 20px;
+                        text-decoration: none;
+                      }
+                    }
+                  }
+                }
+              }
+              .storage-bar{
+                background-color: $color_3;
+                border-radius: 25px;
+                padding: 20px;
+                .container{
+                  background-color: $color_4;
+                  width: 300px;
+                  border-radius: 15px;
+                  .text{
+                    text-align: center;
+                    span{
+                      font-family: $font;
+                      font-size: 20px;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }

@@ -9,8 +9,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" > -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-zRsI7YzQ8z/o+jph0zQH6+4HNhIF7FHw2H+O7yU8P2j5JfcHjw6TMOe9+M21egbkHhk509e3v8N53DqP89dYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="{% static 'blog/main.css' %}">
     {% if title %}
@@ -38,7 +38,7 @@
                   </ul>
                   <!------{{ request.get_host }}/blog/search/-->
                   <form id="searchform" action="{% url 'search' %}" method="get">
-                    <input style="border-radius: 7px; border: none;" type="text" name="q" type="text" value="{{ request.GET.q }}" placeholder="Search" />
+                    <input style="border-radius: 7px; border: none; margin-right: 5px;" type="text" name="q" type="text" value="{{ request.GET.q }}" placeholder="Search" />
                     <button style="border-radius: 7px; border: none;" type="button" onclick="searchform.submit()" class=" text-white my-color btn-primary"><i class="fa fa-search"></i></button>
                 </form>
               

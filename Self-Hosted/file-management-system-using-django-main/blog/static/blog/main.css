@@ -1,5 +1,5 @@
 body {
-  background: #fafafa;
+  background: #EBF2FC;
   color: #333333;
   margin-top: 0;
 }
@@ -29,11 +29,11 @@ ul {
 }
 
 .content-section {
-  background: #ffffff;
+  background: #F5F9FD;
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 25px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .article-title {
@@ -85,7 +85,7 @@ a.article-title:hover {
 
 
 .jumbotron{
-  border-radius: 25px !important; 
+  border-radius: 35px !important; 
   padding-top: 30px !important;
-  padding-bottom: 20px !important;
+  padding-bottom: 30px !important;
 }

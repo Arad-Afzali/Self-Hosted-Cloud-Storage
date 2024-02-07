@@ -1,7 +1,8 @@
 {% extends "blog/base.html" %}
 {% block content %}
-    {% for post in posts %}
-      <div class="jumbotron mt-3 bg-white shadow-lg">
+<div class="d-md-flex flex-wrap">
+  {% for post in posts %}
+      <div class="jumbotron mt-3 bg-white shadow-lg flex-fill mr-2 ml-2 mb-2" style="flex: 0 0 calc(50% - 20px) !important;">
       <article class="media content-section shadow" >
         <a href="{{ post.author.profile.image.url }} " target="_blank"> <img src="{{ post.author.profile.image.url }}  " alt="" class="article-img rounded-circle img-thumbnail img-fluid shadow">
         </a>
@@ -31,6 +32,8 @@
       </article>
       </div>   
     {% endfor %}
+</div>
+    
     {% if is_paginated %}
 
       {% if page_obj.has_previous %}

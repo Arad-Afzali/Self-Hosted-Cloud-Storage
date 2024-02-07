@@ -42,7 +42,7 @@ ul {
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 25px;
-  margin: 20px;
+  margin: 10px ;
 }
 
 .article-title {
@@ -95,8 +95,6 @@ a.article-title:hover {
 
 .jumbotron{
   border-radius: 35px !important; 
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-  padding-right: 10px !important;
-  padding-left: 10px !important;
+  padding: 5px !important;
+  
 }

@@ -20,8 +20,8 @@ Follow these steps to set up the project on your local machine.
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/Arad-Afzali/.git
-    cd AES-File-Encryptor-Decryptor
+    git clone https://github.com/Arad-Afzali/Self-Hosted-Cloud-Storage.git
+    cd Self-Hosted-Cloud-Storage
     ```
 
 2. **Create and activate a virtual environment** (recommended):

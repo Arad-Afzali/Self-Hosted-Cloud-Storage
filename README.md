@@ -64,6 +64,14 @@ python manage.py runserver
 
 Open your browser and navigate to `http://127.0.0.1:8000` to see the application in action.
 
+### Note
+
+You can creat a new superuser by running the following command
+
+```bash
+python manage.py createsuperuser
+```
+
 ## Usage
 
 ### File Management

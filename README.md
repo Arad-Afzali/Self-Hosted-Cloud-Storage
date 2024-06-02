@@ -2,6 +2,8 @@
 
 This is a self-hosted cloud storage management system built using Django. The system allows users to upload, manage, and share files securely within their own infrastructure.
 
+![alt text](<ss.png>)
+
 ## Features
 
 - User authentication

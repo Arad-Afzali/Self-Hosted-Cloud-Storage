@@ -66,7 +66,7 @@ Open your browser and navigate to `http://127.0.0.1:8000` to see the application
 
 ### Note
 
-You can creat a new superuser by running the following command
+You can creat a new superuser by running the following command  superuser can be used for deleting users  
 
 ```bash
 python manage.py createsuperuser
